@@ -1,0 +1,42 @@
+<idea-plugin>
+    <id>it.corradodellorusso.devsearch</id>
+    <name>DevSearch</name>
+    <vendor email="info@corradodellorusso.it" url="https://corradodellorusso.it">Corrado dello Russo</vendor>
+
+    <description><![CDATA[
+      This plugin helps finding meaningful information from any context.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij"/>
+
+    <actions>
+        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction.Console"
+                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction.Editor"
+                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction.Console"
+                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
+        </action>
+        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction.Editor"
+                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+        <action id="it.corradodellorusso.devsearch.action.jar.SearchJarAction"
+                class="it.corradodellorusso.devsearch.action.jar.SearchJarAction" text="Search on Maven Repository">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+
+        <action id="it.corradodellorusso.devsearch.action.extension.SearchExtensionAction"
+                class="it.corradodellorusso.devsearch.action.extension.SearchExtensionAction" text="Search on File Info">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
