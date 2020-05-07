@@ -7,9 +7,9 @@ import it.corradodellorusso.devsearch.search.Search;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Searches for jar files on <a href="https://mvnrepository.com/" target="_blank">MVNRepository</a>.
+ * Builds object to search jar files on <a href="https://mvnrepository.com/" target="_blank">MVNRepository</a>.
  */
-public class SearchJarAction extends FileAction {
+public class JarFileAction extends FileAction {
 
     private static final String ENTRY_TEXT = "Search on Maven Repository";
     private static final String JAR_EXTENSION = "jar";

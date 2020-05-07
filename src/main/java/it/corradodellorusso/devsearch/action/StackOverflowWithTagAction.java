@@ -7,9 +7,9 @@ import it.corradodellorusso.devsearch.search.StackOverflowSearch;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Searches selected text on <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a> using the language as tag.
+ * Builds object to search selected text on <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a> using the language as tag.
  */
-public class SearchStackOverflowWithTagAction extends EditorAction {
+public class StackOverflowWithTagAction extends EditorAction {
 
     private static final String ENTRY_TEXT = "Search on StackOverflow with tag %s";
 

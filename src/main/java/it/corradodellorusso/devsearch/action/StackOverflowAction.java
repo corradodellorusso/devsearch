@@ -2,21 +2,21 @@ package it.corradodellorusso.devsearch.action;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import it.corradodellorusso.devsearch.action.common.EditorAction;
-import it.corradodellorusso.devsearch.search.DevToSearch;
 import it.corradodellorusso.devsearch.search.Search;
+import it.corradodellorusso.devsearch.search.StackOverflowSearch;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Searches selected text on <a href="https://dev.to" target="_blank">DEV</a>.
+ * Builds object to search selected text on <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>.
  */
-public class SearchDevToAction extends EditorAction {
+public class StackOverflowAction extends EditorAction {
 
-    private static final String ENTRY_TEXT = "Search on DEV.to";
+    private static final String ENTRY_TEXT = "Search on StackOverflow";
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
         String text = getSelectedText(event);
-        Search search = new DevToSearch(text);
+        Search search = new StackOverflowSearch(text);
         dispatch(search);
     }
 
