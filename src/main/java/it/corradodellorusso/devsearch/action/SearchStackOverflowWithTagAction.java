@@ -1,29 +1,24 @@
-package it.corradodellorusso.devsearch.action.stackoverflow;
+package it.corradodellorusso.devsearch.action;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import it.corradodellorusso.devsearch.action.EditorAction;
-import it.corradodellorusso.devsearch.dispatcher.Dispatcher;
+import it.corradodellorusso.devsearch.action.common.EditorAction;
 import it.corradodellorusso.devsearch.search.Search;
 import it.corradodellorusso.devsearch.search.StackOverflowSearch;
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * Searches selected text on <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a> using the language as tag.
+ */
 public class SearchStackOverflowWithTagAction extends EditorAction {
 
     private static final String ENTRY_TEXT = "Search on StackOverflow with tag %s";
-
-    private final Dispatcher dispatcher;
-
-    public SearchStackOverflowWithTagAction() {
-        super();
-        this.dispatcher = new Dispatcher();
-    }
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
         String text = getSelectedText(event);
         String language = getCurrentLanguage(event);
         Search search = new StackOverflowSearch(text, language);
-        dispatcher.dispatch(search);
+        dispatch(search);
     }
 
     @Override

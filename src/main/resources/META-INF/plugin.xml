@@ -12,30 +12,30 @@
     <extensions defaultExtensionNs="com.intellij"/>
 
     <actions>
-        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction.Console"
-                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction">
+        <action id="it.corradodellorusso.devsearch.action.SearchStackOverflowAction.Console"
+                class="it.corradodellorusso.devsearch.action.SearchStackOverflowAction">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
         </action>
-        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction.Editor"
-                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowAction">
+        <action id="it.corradodellorusso.devsearch.action.SearchStackOverflowAction.Editor"
+                class="it.corradodellorusso.devsearch.action.SearchStackOverflowAction">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
-        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction.Console"
-                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction">
+        <action id="it.corradodellorusso.devsearch.action.SearchStackOverflowWithTagAction.Console"
+                class="it.corradodellorusso.devsearch.action.SearchStackOverflowWithTagAction">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
         </action>
-        <action id="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction.Editor"
-                class="it.corradodellorusso.devsearch.action.stackoverflow.SearchStackOverflowWithTagAction">
+        <action id="it.corradodellorusso.devsearch.action.SearchStackOverflowWithTagAction.Editor"
+                class="it.corradodellorusso.devsearch.action.SearchStackOverflowWithTagAction">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
 
-        <action id="it.corradodellorusso.devsearch.action.jar.SearchJarAction"
-                class="it.corradodellorusso.devsearch.action.jar.SearchJarAction" text="Search on Maven Repository">
+        <action id="it.corradodellorusso.devsearch.action.SearchJarAction"
+                class="it.corradodellorusso.devsearch.action.SearchJarAction" text="Search on Maven Repository">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
 
-        <action id="it.corradodellorusso.devsearch.action.extension.SearchExtensionAction"
-                class="it.corradodellorusso.devsearch.action.extension.SearchExtensionAction" text="Search on File Info">
+        <action id="it.corradodellorusso.devsearch.action.SearchFileExtensionAction"
+                class="it.corradodellorusso.devsearch.action.SearchFileExtensionAction" text="Search on File Info">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
     </actions>
