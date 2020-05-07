@@ -14,33 +14,33 @@
     <actions>
         <!-- Editor and Console -->
         <!-- StackOverflow -->
-        <action id="it.corradodellorusso.devsearch.action.SearchStackOverflowAction"
-                class="it.corradodellorusso.devsearch.action.SearchStackOverflowAction">
+        <action id="it.corradodellorusso.devsearch.action.StackOverflowAction"
+                class="it.corradodellorusso.devsearch.action.StackOverflowAction">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <!-- StackOverflow with Tag-->
-        <action id="it.corradodellorusso.devsearch.action.SearchStackOverflowWithTagAction"
-                class="it.corradodellorusso.devsearch.action.SearchStackOverflowWithTagAction">
+        <action id="it.corradodellorusso.devsearch.action.StackOverflowWithTagAction"
+                class="it.corradodellorusso.devsearch.action.StackOverflowWithTagAction">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <!-- DevTo -->
-        <action id="it.corradodellorusso.devsearch.action.SearchDevToAction"
-                class="it.corradodellorusso.devsearch.action.SearchDevToAction">
+        <action id="it.corradodellorusso.devsearch.action.DevToAction"
+                class="it.corradodellorusso.devsearch.action.DevToAction">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
 
         <!-- Files -->
         <!-- MVNRepository -->
-        <action id="it.corradodellorusso.devsearch.action.SearchJarAction"
-                class="it.corradodellorusso.devsearch.action.SearchJarAction" text="Search on Maven Repository">
+        <action id="it.corradodellorusso.devsearch.action.JarFileAction"
+                class="it.corradodellorusso.devsearch.action.JarFileAction" text="Search on Maven Repository">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
         <!-- FileInfo -->
-        <action id="it.corradodellorusso.devsearch.action.SearchFileExtensionAction"
-                class="it.corradodellorusso.devsearch.action.SearchFileExtensionAction" text="Search on File Info">
+        <action id="it.corradodellorusso.devsearch.action.FileExtensionAction"
+                class="it.corradodellorusso.devsearch.action.FileExtensionAction" text="Search on File Info">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
     </actions>

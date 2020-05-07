@@ -1,5 +1,8 @@
 package it.corradodellorusso.devsearch.search;
 
+/**
+ * Builds search for <a href="https://dev.to" target="_blank">DEV</a>.
+ */
 public class DevToSearch extends QueryParamSearch {
 
     private static final String QUERY_TEMPLATE = "https://dev.to/search?q=%s";

@@ -7,9 +7,9 @@ import it.corradodellorusso.devsearch.search.Search;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Searches for file extension on <a href="https://fileinfo.com/" target="_blank">FileInfo</a>.
+ * Builds object to search file extension on <a href="https://fileinfo.com/" target="_blank">FileInfo</a>.
  */
-public class SearchFileExtensionAction extends FileAction {
+public class FileExtensionAction extends FileAction {
 
     private static final String ENTRY_TEXT = "Search %s on FileInfo";
 
