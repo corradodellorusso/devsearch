@@ -12,7 +12,7 @@ public abstract class GenericQueryParamSearch implements Search {
     }
 
     @Override
-    public String toUrl() {
+    public URI toURI() {
         String encode = URLEncoder.encode(query, StandardCharsets.UTF_8);
         return String.format(getQueryTemplate(), encode);
     }

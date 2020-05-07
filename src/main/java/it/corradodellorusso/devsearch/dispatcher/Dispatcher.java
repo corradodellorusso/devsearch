@@ -1,12 +1,17 @@
 package it.corradodellorusso.devsearch.dispatcher;
 
-import com.intellij.ide.BrowserUtil;
 import it.corradodellorusso.devsearch.search.Search;
 
-public class Dispatcher {
+/**
+ * Implementors of this interface are in charge of dispatching different type of {@link Search} in the right way.
+ * An example of dispatching would be opening in a browser a search which has a http or https content.
+ */
+public interface Dispatcher {
 
-    public void dispatch(Search search) {
-        BrowserUtil.browse(search.toUrl());
-    }
+    /**
+     * Actually dispatches the search.
+     * @param search to be dispatched.
+     */
+    void dispatch(Search search);
 
 }

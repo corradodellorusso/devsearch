@@ -1,28 +1,23 @@
-package it.corradodellorusso.devsearch.action.stackoverflow;
+package it.corradodellorusso.devsearch.action;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import it.corradodellorusso.devsearch.action.EditorAction;
-import it.corradodellorusso.devsearch.dispatcher.Dispatcher;
+import it.corradodellorusso.devsearch.action.common.EditorAction;
 import it.corradodellorusso.devsearch.search.Search;
 import it.corradodellorusso.devsearch.search.StackOverflowSearch;
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * Searches selected text on <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>.
+ */
 public class SearchStackOverflowAction extends EditorAction {
 
     private static final String ENTRY_TEXT = "Search on StackOverflow";
-
-    private final Dispatcher dispatcher;
-
-    public SearchStackOverflowAction() {
-        super();
-        this.dispatcher = new Dispatcher();
-    }
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
         String text = getSelectedText(event);
         Search search = new StackOverflowSearch(text);
-        dispatcher.dispatch(search);
+        dispatch(search);
     }
 
     @Override

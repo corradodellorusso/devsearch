@@ -21,7 +21,7 @@ public class StackOverflowSearch implements Search {
     }
 
     @Override
-    public String toUrl() {
+    public URI toURI() {
         StringBuilder builder = new StringBuilder();
         if (tag != null) {
             builder.append("[");
