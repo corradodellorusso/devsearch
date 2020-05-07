@@ -10,7 +10,7 @@ public class WebDispatcher implements Dispatcher {
 
     @Override
     public void dispatch(Search search) {
-        BrowserUtil.browse(search.toUrl());
+        BrowserUtil.browse(search.toURI());
     }
 
 }

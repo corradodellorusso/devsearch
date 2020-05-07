@@ -3,6 +3,7 @@ package it.corradodellorusso.devsearch.action.common;
 import com.intellij.lang.Language;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
+import com.intellij.openapi.editor.Caret;
 import com.intellij.openapi.editor.CaretModel;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.fileTypes.PlainTextLanguage;
@@ -27,18 +28,20 @@ public abstract class EditorAction extends DevSearchAction {
             return false;
         }
         CaretModel caretModel = editor.getCaretModel();
-        return caretModel.getCurrentCaret().hasSelection();
+        Caret caret = caretModel.getCurrentCaret();
+        return caret.hasSelection() && !caret.getSelectedText().isBlank();
     }
 
     /**
      * Gets the selected text.
+     * Always call after {@link #hasSelectedText(AnActionEvent)}.
      *
      * @return selected text.
      */
     public String getSelectedText(@NotNull AnActionEvent event) {
         Editor editor = event.getRequiredData(CommonDataKeys.EDITOR);
         CaretModel caretModel = editor.getCaretModel();
-        return caretModel.getCurrentCaret().getSelectedText();
+        return caretModel.getCurrentCaret().getSelectedText().trim();
     }
 
     /**
