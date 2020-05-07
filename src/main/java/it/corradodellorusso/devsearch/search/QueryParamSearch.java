@@ -10,11 +10,11 @@ import java.nio.charset.StandardCharsets;
  * In case like this, inheritors just need to provide mysite.com/q=<i>%s</i>.
  * Use {@link MvnRepositorySearch} as an example.
  */
-public abstract class GenericQueryParamSearch implements Search {
+public abstract class QueryParamSearch implements Search {
 
     private final String query;
 
-    public GenericQueryParamSearch(String query) {
+    public QueryParamSearch(String query) {
         this.query = query;
     }
 
