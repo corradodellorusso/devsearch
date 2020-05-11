@@ -14,7 +14,8 @@ You can select some text in the console to search selection on following website
  
 ##### From the Project Browser 
 You can right click any file or folder in project browser to search on following websites:
-* FileInfo (any file, giving information about the extension)
+* FileInfo (any file having an extension)
+* Google (any file or folder)
 * MVNRepository (any jar file)
 * NPM (any folder under node_modules) 
 
@@ -23,3 +24,7 @@ Contribute to this project either by suggesting features or developing them your
 This project offers a lot of helpers to get you build your search in less than 10 lines of codes (for real!).
 
 Please consider APIs in this project as in an alpha stage. They may vary very fast.  
+
+### Contributors
+corradodellorusso - owner
+giacintomancino - developer
