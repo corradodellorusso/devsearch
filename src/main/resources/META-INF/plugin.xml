@@ -38,6 +38,11 @@
                 class="it.corradodellorusso.devsearch.action.JarFileAction" text="Search on Maven Repository">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
+        <!-- NPM -->
+        <action id="it.corradodellorusso.devsearch.action.NpmAction"
+                class="it.corradodellorusso.devsearch.action.NpmAction" text="Search on NPM">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
         <!-- FileInfo -->
         <action id="it.corradodellorusso.devsearch.action.FileExtensionAction"
                 class="it.corradodellorusso.devsearch.action.FileExtensionAction" text="Search on File Info">
