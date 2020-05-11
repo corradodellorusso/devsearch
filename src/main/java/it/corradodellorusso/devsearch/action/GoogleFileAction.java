@@ -24,9 +24,6 @@ public class GoogleFileAction extends FileAction {
     public void update(@NotNull AnActionEvent event) {
         boolean shouldShow = hasFileAttached(event);
         event.getPresentation().setEnabledAndVisible(shouldShow);
-        if (!shouldShow) {
-            return;
-        }
         event.getPresentation().setText(ENTRY_TEXT);
     }
 }
