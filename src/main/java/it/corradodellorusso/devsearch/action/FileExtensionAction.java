@@ -15,19 +15,19 @@ public class FileExtensionAction extends FileAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
-        String extension = getFileExtension(event);
+        String extension = getFile(event).getExtension();
         Search search = new FileInfoSearch(extension);
         dispatch(search);
     }
 
     @Override
     public void update(@NotNull AnActionEvent event) {
-        boolean shouldShow = hasFileAttached(event) && hasFileExtension(event);
+        boolean shouldShow = hasFileAttached(event) && getFile(event).getExtension() != null;
         event.getPresentation().setEnabledAndVisible(shouldShow);
         if (!shouldShow) {
             return;
         }
-        event.getPresentation().setText(String.format(ENTRY_TEXT, getFileExtension(event)));
+        event.getPresentation().setText(String.format(ENTRY_TEXT, getFile(event).getExtension()));
     }
 
 }

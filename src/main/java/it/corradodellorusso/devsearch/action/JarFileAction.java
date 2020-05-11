@@ -16,14 +16,14 @@ public class JarFileAction extends FileAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
-        String filename = getFileName(event);
+        String filename = getFile(event).getName();
         Search search = new MvnRepositorySearch(filename);
         dispatch(search);
     }
 
     @Override
     public void update(@NotNull AnActionEvent event) {
-        boolean shouldShow = hasFileAttached(event) && JAR_EXTENSION.equalsIgnoreCase(getFileExtension(event));
+        boolean shouldShow = hasFileAttached(event) && JAR_EXTENSION.equalsIgnoreCase(getFile(event).getExtension());
         event.getPresentation().setEnabledAndVisible(shouldShow);
         event.getPresentation().setText(ENTRY_TEXT);
     }
