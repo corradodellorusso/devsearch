@@ -48,5 +48,10 @@
                 class="it.corradodellorusso.devsearch.action.FileExtensionAction" text="Search on File Info">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
+        <!-- GoogleFile -->
+        <action id="it.corradodellorusso.devsearch.action.GoogleFileAction"
+                class="it.corradodellorusso.devsearch.action.GoogleFileAction" text="Search on Google">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
