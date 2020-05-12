@@ -15,19 +15,25 @@
         <!-- Editor and Console -->
         <!-- StackOverflow -->
         <action id="it.corradodellorusso.devsearch.action.StackOverflowAction"
-                class="it.corradodellorusso.devsearch.action.StackOverflowAction">
+                class="it.corradodellorusso.devsearch.action.StackOverflowAction"
+                description="Search selected text on StackOverflow"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <!-- StackOverflow with Tag-->
         <action id="it.corradodellorusso.devsearch.action.StackOverflowWithTagAction"
-                class="it.corradodellorusso.devsearch.action.StackOverflowWithTagAction">
+                class="it.corradodellorusso.devsearch.action.StackOverflowWithTagAction"
+                description="Search selected text on StackOverflow"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
         <!-- DevTo -->
         <action id="it.corradodellorusso.devsearch.action.DevToAction"
-                class="it.corradodellorusso.devsearch.action.DevToAction">
+                class="it.corradodellorusso.devsearch.action.DevToAction"
+                description="Search selected text on DevTo"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu"/>
         </action>
@@ -35,22 +41,34 @@
         <!-- Files -->
         <!-- MVNRepository -->
         <action id="it.corradodellorusso.devsearch.action.JarFileAction"
-                class="it.corradodellorusso.devsearch.action.JarFileAction" text="Search on Maven Repository">
+                class="it.corradodellorusso.devsearch.action.JarFileAction"
+                text="Search on Maven Repository"
+                description="Search selected file on MVNRepository"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
         <!-- NPM -->
         <action id="it.corradodellorusso.devsearch.action.NpmAction"
-                class="it.corradodellorusso.devsearch.action.NpmAction" text="Search on NPM">
+                class="it.corradodellorusso.devsearch.action.NpmAction"
+                text="Search on NPM"
+                description="Search selected library on NPM"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
         <!-- FileInfo -->
         <action id="it.corradodellorusso.devsearch.action.FileExtensionAction"
-                class="it.corradodellorusso.devsearch.action.FileExtensionAction" text="Search on File Info">
+                class="it.corradodellorusso.devsearch.action.FileExtensionAction"
+                text="Search on File Info"
+                description="Search selected file on FileInfo"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
         <!-- GoogleFile -->
         <action id="it.corradodellorusso.devsearch.action.GoogleFileAction"
-                class="it.corradodellorusso.devsearch.action.GoogleFileAction" text="Search on Google">
+                class="it.corradodellorusso.devsearch.action.GoogleFileAction"
+                text="Search on Google"
+                description="Search selected item on Google"
+                icon="DevSearchIcons.SEARCH_ICON">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
     </actions>
