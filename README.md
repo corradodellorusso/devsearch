@@ -26,5 +26,5 @@ This project offers a lot of helpers to get you build your search in less than 1
 Please consider APIs in this project as in an alpha stage. They may vary very fast.  
 
 ### Contributors
-corradodellorusso - owner
-giacintomancino - developer
+* corradodellorusso - owner
+* giacintomancino - developer
